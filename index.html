@@ -1,4 +1,4 @@
-<html>
+ <html>
 
 
 <head>
@@ -12,9 +12,10 @@
         }
 
        #body{
-           background-image:url(darkblue.jpg);
+           background-image:url("bg.jpg");
            background-repeat :round;
            background-attachment:fixed;
+           height:1000;
        }
 
         #name {
@@ -30,14 +31,28 @@
             
         }
 
-        #div1{
-            height :150;
-            vertical-align:central;
-            align-content:center;
-            
+        #div1 {
+            height: 150;
+            vertical-align: central;
+            align-content: center;
         }
 
+        #menu_bar{
+            
+            display:inherit;
+            width:100%;
+        }
 
+        .menubar {
+            font-size: 25;
+            color: #000000 ;
+            border-style: groove;
+            padding: 7;
+            background-color: darkkhaki;
+            width: 30%;
+            text-align: center;
+            font-family: cursive;
+        }
 
 
     </style>
@@ -53,8 +68,6 @@
         <h1 class="c1" id="c" style=" visibility:visible;display:inline">|</h1>
     </div>
 
-
-
     <script>
 
         var m = document.getElementById("me");
@@ -65,9 +78,29 @@
         }, 300)
         
     </script>
-
     <script src="animation1.js"></script>
 
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    
+
+    <table id="menu_bar" style="width:inherit; height:auto; background-color:#ffffff">
+        
+        <tr style="height:10"> 
+        <td class="menubar" id="m1"> Me </td>
+        <td class="menubar" id="m2"> Projects </td>
+        <td class="menubar" id="m3"> My Site </td>
+        <td class="menubar" id="m4"> Contact Me </td>
+        </tr>
+    </table>
+
+
+    <script src="menubar.js"></script>
+
+    
 
 </body>
 
